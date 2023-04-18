@@ -1,0 +1,13 @@
+com\bookmycon\bookmeeting\handlers\MyColorIsIntentHandler.class
+com\bookmycon\bookmeeting\handlers\SampleIntentHandler.class
+com\bookmycon\bookmeeting\handlers\LaunchRequestHandler.class
+com\bookmycon\bookmeeting\handlers\CancelandStopIntentHandler.class
+com\bookmycon\bookmeeting\handlers\SessionEndedRequestHandler.class
+com\bookmycon\bookmeeting\HelloWorldStreamHandler.class
+com\bookmycon\model\Booking.class
+com\bookmycon\bookmeeting\handlers\HelpIntentHandler.class
+com\bookmycon\model\User.class
+com\bookmycon\bookmeeting\handlers\HelloWorldIntentHandler.class
+com\bookmycon\bookmeeting\handlers\BookingIntentHandle.class
+com\bookmycon\bookmeeting\handlers\FallbackIntentHandler.class
+com\bookmycon\bookmeeting\handlers\WhatsMyColorIntentHandler.class

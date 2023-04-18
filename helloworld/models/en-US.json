@@ -1,0 +1,257 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hello world",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancle"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "say hello",
+                        "say hello world",
+                        "hello",
+                        "say hi",
+                        "say hi world",
+                        "hi",
+                        "hay hay",
+                        "how are you"
+                    ]
+                },
+                {
+                    "name": "MyColorIsIntent",
+                    "slots": [
+                        {
+                            "name": "Color",
+                            "type": "LIST_OF_COLORS"
+                        }
+                    ],
+                    "samples": [
+                        " my color is {Color}",
+                        " my favorite color is {Color}"
+                    ]
+                },
+                {
+                    "name": "WhatsMyColorIntent",
+                    "slots": [],
+                    "samples": [
+                        "whats my color",
+                        "what is my color",
+                        "say my color",
+                        "tell me my color",
+                        "whats my favorite color",
+                        "what is my favorite color",
+                        "say my favorite color",
+                        "tell me my favorite color",
+                        "tell me what my favorite color is"
+                    ]
+                },
+                {
+                    "name": "BookingIntent",
+                    "slots": [
+                        {
+                            "name": "Name",
+                            "type": "LIST_OF_AUDITORIUM"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "TimeFrom",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "TimeTo",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "make booking for auditorium {Name} for date {Date} From time  {TimeFrom} to time {TimeTo} ",
+                        "make booking for auditorium {Name} for date {Date} From time  {TimeFrom} to {TimeTo}",
+                        "make booking for  {Name} for date {Date} From time  {TimeFrom} to {TimeTo}",
+                        "make booking for  {Name} for date {Date} From {TimeFrom} to {TimeTo}",
+                        "make booking for auditorium {Name} for date {Date} From {TimeFrom} to {TimeTo}",
+                        "make booking for auditorium {Name} for {Date} From {TimeFrom} to {TimeTo}",
+                        "make booking for {Name} for {Date} From {TimeFrom} to {TimeTo}"
+                    ]
+                },
+                {
+                    "name": "SampleIntent",
+                    "slots": [],
+                    "samples": [
+                        "say text",
+                        "sample"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": [
+                        "fallback"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BookingName",
+                    "slots": [
+                        {
+                            "name": "BookingNameIntent",
+                            "type": "LIST_OF_AUDITORIUM"
+                        }
+                    ],
+                    "samples": [
+                        "make booking for auditorium {BookingNameIntent}",
+                        "make booking {BookingNameIntent}",
+                        "make booking for {BookingNameIntent}"
+                    ]
+                },
+                {
+                    "name": "BookingDate",
+                    "slots": [
+                        {
+                            "name": "BookingDateIntent",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "for {BookingDateIntent}",
+                        "for date {BookingDateIntent}"
+                    ]
+                },
+                {
+                    "name": "BookingTimeIntent",
+                    "slots": [
+                        {
+                            "name": "BookingTimeFromIntent",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "BookingTimeToIntent",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "from time {BookingTimeFromIntent} to time {BookingTimeToIntent}",
+                        "for {BookingTimeFromIntent} to {BookingTimeToIntent}",
+                        "from {BookingTimeFromIntent} to {BookingTimeToIntent}",
+                        "from time {BookingTimeFromIntent} to {BookingTimeToIntent}",
+                        "for time {BookingTimeFromIntent} to {BookingTimeToIntent}"
+                    ]
+                },
+                {
+                    "name": "BookingList",
+                    "slots": [],
+                    "samples": [
+                        "list of auditoriums",
+                        "list of auditorium"
+                    ]
+                },
+                {
+                    "name": "GoRest",
+                    "slots": [],
+                    "samples": [
+                        "go rest"
+                    ]
+                },
+                {
+                    "name": "BookingNameDateIntent",
+                    "slots": [
+                        {
+                            "name": "DateName",
+                            "type": "LIST_OF_AUDITORIUM"
+                        },
+                        {
+                            "name": "DateDate",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "make booking for {DateName} for date {DateDate}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "purple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orange"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yellow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_AUDITORIUM",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "audi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "open office"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meeting hall"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conferance hall"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
